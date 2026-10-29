@@ -1,0 +1,183 @@
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מפרקט למציאות</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #e65100;
+            text-align: center;
+            border-bottom: 2px solid #ffcc80;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        p.intro {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        /* עיצוב קופסאות הנושאים */
+        .section-box {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 25px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .section-box:hover {
+            transform: scale(1.01);
+        }
+
+        /* שכבת כהות שקופה */
+        .content-overlay {
+            background-color: rgba(0, 0, 0, 0.78);
+            padding: 35px;
+            color: #ffffff;
+        }
+
+        /* תמונות רקע */
+        .bg-competition {
+            background-image: url('https://unsplash.com');
+        }
+        .bg-mentality {
+            background-image: url('https://unsplash.com');
+        }
+        .bg-teamwork {
+            background-image: url('https://unsplash.com');
+        }
+
+        h2 {
+            color: #ffb74d;
+            margin-top: 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        ul {
+            padding-right: 20px;
+            margin-top: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #ffcc80;
+        }
+
+        /* עיצוב משפט המוטיבציה */
+        .motivation-quote {
+            display: none;
+            background-color: #ff9800;
+            color: #ffffff;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+            animation: fadeIn 0.4s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>מפרקט למציאות</h1>
+        
+        <p class="intro">כדורסל זה ממש לא רק לזרוק כדור לטבעת וללכת הביתה. תכלס, המגרש הוא שיקוף חי של החיים עצמם. כל התובנות, הערכים והשפשוף שאנחנו מקבלים תוך כדי המשחק, מעצבים את מי שאנחנו גם מחוץ לקווים. <br><strong>טיפ: קליק קטן על כל קופסה והמוטיבציה שלכם בשמיים!</strong></p>
+
+        <!-- נושא 1: תחרותיות -->
+        <div class="section-box bg-competition" onclick="toggleQuote('quote1')">
+            <div class="content-overlay">
+                <h2>1. אש התחרותיות: הדרייב שמקפיץ אותנו קדימה</h2>
+                <p>התחרותיות על הפרקט היא המנוע שמדליק את המשחק. הרצון לטרוף את המגרש, להשתפר בכל אימון ולנצח באתגרים מול היריב, נותן לנו חוסן עצום בחיים האמיתיים:</p>
+                <ul>
+                    <li><strong>להרים את הראש בקשיים:</strong> המשחק מלמד אותנו שגם אם חטפנו בראש ברבע הראשון, תמיד יש הזדמנות לעשות קאמבק מהסרטים ברבע הבא.</li>
+                    <li><strong>סימון מטרות:</strong> כמו השאיפה הבלתי מתפשרת להשחיל עוד סל, ככה בחיים זה מתורגם לרצון להפציץ בלימודים, לעוף על העבודה או להשיג כל יעד אישי אחר.</li>
+                </ul>
+                <div id="quote1" class="motivation-quote">
+                    "אני יכול לקבל כישלון, כל אחד נכשל במשהו. אבל אני לא יכול לקבל אי-ניסיון." – מייקל ג'ורדן 🏀
+                </div>
+            </div>
+        </div>
+
+        <!-- נושא 2: מנטליות -->
+        <div class="section-box bg-mentality" onclick="toggleQuote('quote2')">
+            <div class="content-overlay">
+                <h2>2. מנטליות של ברזל: מהפרקט אל המציאות בשטח</h2>
+                <p>הראש של השחקן זה הסיפור כולו. החוסן המנטלי שנבנה בתוך סיטואציות של לחץ מטורף בשניות האחרונות למשחק, הוא כלי משנה חיים לכל דבר ועניין:</p>
+                <ul>
+                    <li><strong>פוקוס וסינון רעשים:</strong> היכולת לעמוד על הקו, לקלוע זריקת עונשין מכרעת כשכל האולם על הרגליים וכולם צורחים מסביב, מקנה לנו כושר ריכוז עילאי ומלמדת אותנו לשים ברקס לרעשי רקע ביום-יום.</li>
+                    <li><strong>קור רוח במשברים:</strong> כשהקבוצה חוטפת ריצה מהירה של נקודות והכל נראה אבוד, השחקנים חייבים לשמור על פאסון. המנטליות הזו מצילה אותנו מפאניקה כשאנחנו נתקלים בתקלות לא צפויות בחיים.</li>
+                </ul>
+                <div id="quote2" class="motivation-quote">
+                    "אל תפחדו מהרגעים הלחוצים. לחץ הוא פריבילגיה – הוא אומר שמה שאתם עושים באמת משנה." – קובי בראיינט 🔥
+                </div>
+            </div>
+        </div>
+
+        <!-- נושא 3: עבודת צוות -->
+        <div class="section-box bg-teamwork" onclick="toggleQuote('quote3')">
+            <div class="content-overlay">
+                <h2>3. מעבר ללוח התוצאות: לראות את האחר ולנצח את היהירות</h2>
+                <p>שחקן ענק באמת נמדד לא בכמה נקודות הוא תפר על הלוח, אלא באיזו מידה הוא שדרג את החברים שלו לקבוצה. השיעור הזה הוא התרופה האולטימטיבית לאגו מנופח:</p>
+                <ul>
+                    <li><strong>האסיסט המושלם:</strong> בואו נהיה כנים, לפעמים המהלך הכי חכם זה לא ללכת WITH HEAD IN THE WALL ולזרוק לבד, אלא לשחרר את הכדור לחבר שנמצא בעמדה פנויה. בשטח, שיתוף פעולה ופרגון שווים הרבה יותר מאשר לנסות לגנוב את ההצגה בכוחות עצמכם.</li>
+                    <li><strong>ענווה וכבוד הדדי:</strong> הכדורסל מזכיר לנו שגם הכוכב הכי גדול צריך את החסימה של הגבוה ואת ההגנה של הרכז. התובנה הזו מורידה אותנו לקרקע ומלמדת אותנו להעריך את התרומה של כל אדם שמקיף אותנו.</li>
+                </ul>
+                <div id="quote3" class="motivation-quote">
+                    "כישרון מנצח משחקים, אבל עבודת צוות ואינטליגנציה מנצחות אליפויות." – פיל ג'קסון 🏆
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- תגית הסקריפט -->
+    <script>
+        function toggleQuote(quoteId) {
+            var quote = document.getElementById(quoteId);
+            var currentDisplay = window.getComputedStyle(quote).display;
+            
+            if (currentDisplay === "none") {
+                quote.style.display = "block";
+            } else {
+                quote.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
